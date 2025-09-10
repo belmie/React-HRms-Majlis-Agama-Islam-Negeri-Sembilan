@@ -69,17 +69,28 @@ export const sidebarData: SidebarData = {
         },
         {
           title: 'Info Semasa',
-          url: '#',
           icon: LaptopMinimal,
+          items: [
+            { title: 'Berita', url: '#' },
+            { title: 'Pengumuman', url: '#' },
+            { title: 'Memorandum', url: '#' },
+            { title: 'Mesyuarat', url: '#' },
+            { title: 'Senarai Bercuti Hari Ini', url: '#' },
+          ],
         },
         {
           title: 'Log Aktiviti Staf',
-          url: '#',
           icon: Activity,
+          items: [
+            { title: 'Borang Keluar Pejabat', url: '#' },
+            { title: 'Sokongan', url: '#' },
+            { title: 'Kelulusan', url: '#' },
+            { title: 'Mesyuarat', url: '#' },
+          ],
         },
         {
           title: 'Cuti',
-          url: '#',
+          url: '/cuti',
           icon: LaptopMinimal,
         },
         {
