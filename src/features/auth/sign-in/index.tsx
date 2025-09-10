@@ -17,10 +17,11 @@ export function SignIn() {
     <AuthLayout>
       <Card className='gap-4'>
         <CardHeader>
-          <CardTitle className='text-lg tracking-tight'>Sign in</CardTitle>
+          <CardTitle className='text-lg tracking-tight'>Log Masuk</CardTitle>
           <CardDescription>
-            Enter your email and password below to <br />
-            log into your account
+            Masukkan e-mel dan kata laluan anda di bawah untuk
+            <br />
+            mengakses akaun anda.
           </CardDescription>
         </CardHeader>
         <CardContent>

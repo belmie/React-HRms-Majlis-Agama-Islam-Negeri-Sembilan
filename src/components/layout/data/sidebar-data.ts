@@ -21,6 +21,11 @@ import {
   AudioWaveform,
   Command,
   GalleryVerticalEnd,
+  LaptopMinimal,
+  Activity,
+  SquareUserRound,
+  Warehouse,
+  LetterText,
 } from 'lucide-react'
 import { ClerkLogo } from '@/assets/clerk-logo'
 import { type SidebarData } from '../types'
@@ -33,17 +38,22 @@ export const sidebarData: SidebarData = {
   },
   teams: [
     {
-      name: 'Shadcn Admin',
+      name: 'Pentadbir Sistem',
       logo: Command,
       plan: 'Vite + ShadcnUI',
     },
     {
-      name: 'Acme Inc',
+      name: 'Pentadbiran',
       logo: GalleryVerticalEnd,
       plan: 'Enterprise',
     },
     {
-      name: 'Acme Corp.',
+      name: 'Sumber Manusia',
+      logo: AudioWaveform,
+      plan: 'Startup',
+    },
+    {
+      name: 'Kakitangan',
       logo: AudioWaveform,
       plan: 'Startup',
     },
@@ -53,28 +63,78 @@ export const sidebarData: SidebarData = {
       title: 'General',
       items: [
         {
-          title: 'Dashboard',
+          title: 'Halaman Utama',
           url: '/',
           icon: LayoutDashboard,
         },
         {
-          title: 'Tasks',
+          title: 'Info Semasa',
+          url: '#',
+          icon: LaptopMinimal,
+        },
+        {
+          title: 'Log Aktiviti Staf',
+          url: '#',
+          icon: Activity,
+        },
+        {
+          title: 'Cuti',
+          url: '#',
+          icon: LaptopMinimal,
+        },
+        {
+          title: 'Rekod Sumber Manusia',
+          url: '#',
+          icon: SquareUserRound,
+        },
+        {
+          title: 'Rekod Pentadbiran',
+          url: '#',
+          icon: SquareUserRound,
+        },
+        {
+          title: 'Rekod Kewangan',
+          url: '#',
+          icon: SquareUserRound,
+        },
+        {
+          title: 'Tempahan Bilik Mesyuarat',
+          url: '#',
+          icon: Warehouse,
+        },
+        {
+          title: 'Penggurusan Prestasi',
+          url: '#',
+          icon: SquareUserRound,
+        },
+        {
+          title: 'Penggurusan Isytihar Harta',
+          url: '#',
+          icon: SquareUserRound,
+        },
+        {
+          title: 'Surat Jaminan',
+          url: '#',
+          icon: LetterText,
+        },
+        {
+          title: 'Tugas',
           url: '/tasks',
           icon: ListTodo,
         },
         {
-          title: 'Apps',
+          title: 'Aplikasi',
           url: '/apps',
           icon: Package,
         },
         {
-          title: 'Chats',
+          title: 'Perbualan',
           url: '/chats',
           badge: '3',
           icon: MessagesSquare,
         },
         {
-          title: 'Users',
+          title: 'Pengguna',
           url: '/users',
           icon: Users,
         },
@@ -83,15 +143,15 @@ export const sidebarData: SidebarData = {
           icon: ClerkLogo,
           items: [
             {
-              title: 'Sign In',
+              title: 'Log Masuk',
               url: '/clerk/sign-in',
             },
             {
-              title: 'Sign Up',
+              title: 'Daftar',
               url: '/clerk/sign-up',
             },
             {
-              title: 'User Management',
+              title: 'Pengurusan Pengguna',
               url: '/clerk/user-management',
             },
           ],
@@ -164,31 +224,31 @@ export const sidebarData: SidebarData = {
       title: 'Other',
       items: [
         {
-          title: 'Settings',
+          title: 'Tetapan',
           icon: Settings,
           items: [
             {
-              title: 'Profile',
+              title: 'Profil',
               url: '/settings',
               icon: UserCog,
             },
             {
-              title: 'Account',
+              title: 'Akaun',
               url: '/settings/account',
               icon: Wrench,
             },
             {
-              title: 'Appearance',
+              title: 'Tema & Penampilan',
               url: '/settings/appearance',
               icon: Palette,
             },
             {
-              title: 'Notifications',
+              title: 'Notifikasi',
               url: '/settings/notifications',
               icon: Bell,
             },
             {
-              title: 'Display',
+              title: 'Paparan',
               url: '/settings/display',
               icon: Monitor,
             },
