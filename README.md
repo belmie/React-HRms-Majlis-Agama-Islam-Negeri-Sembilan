@@ -77,7 +77,7 @@ If you want to update components using the Shadcn CLI (e.g., `npx shadcn@latest 
 Clone the project
 
 ```bash
-  git clone https://github.com/satnaing/shadcn-admin.git
+  git clone https://github.com/belmie/shadcn-admin.git
 ```
 
 Go to the project directory
@@ -100,9 +100,9 @@ Start the server
 
 ## Sponsoring this project ❤️
 
-If you find this project helpful or use this in your own work, consider [sponsoring me](https://github.com/sponsors/satnaing) to support development and maintenance. You can [buy me a coffee](https://buymeacoffee.com/satnaing) as well. Don’t worry, every penny helps. Thank you! 🙏
+If you find this project helpful or use this in your own work, consider [sponsoring me](https://github.com/sponsors/belmie) to support development and maintenance. You can [buy me a coffee](https://buymeacoffee.com/belmie) as well. Don’t worry, every penny helps. Thank you! 🙏
 
-For questions or sponsorship inquiries, feel free to reach out at [contact@satnaing.dev](mailto:contact@satnaing.dev).
+For questions or sponsorship inquiries, feel free to reach out at [contact@belmie.dev](mailto:contact@belmie.dev).
 
 ### Current Sponsor
 
@@ -110,7 +110,7 @@ For questions or sponsorship inquiries, feel free to reach out at [contact@satna
 
 ## Author
 
-Crafted with 🤍 by [@satnaing](https://github.com/satnaing)
+Crafted with 🤍 by [@belmie](https://github.com/belmie)
 
 ## License
 
