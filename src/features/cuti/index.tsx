@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { useState } from 'react'
 import {
   Card,
   CardContent,
@@ -6,7 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
+import { Skeleton } from '@/components/ui/skeleton'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import YearDropdown from '@/components/YearDropdown'
 import { ConfigDrawer } from '@/components/config-drawer'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
@@ -20,6 +22,21 @@ import { UserTable } from './components/senarai-pemohonan-cuti'
 // import { RecentSales } from './components/recent-sales'
 
 export function Cuti() {
+  const [yearFromChild, setYearFromChild] = useState<string>('')
+  const [loading, setLoading] = useState(false)
+  const [data, setData] = useState<string | null>(null)
+
+  const handleYearChange = (year: string) => {
+    setYearFromChild(year)
+    setLoading(true)
+    setData(null)
+
+    // Simulate fetching data based on year
+    setTimeout(() => {
+      setData(`${year}`)
+      setLoading(false)
+    }, 1500) // adjust delay sesuai kebutuhan
+  }
   return (
     <>
       {/* ===== Top Heading ===== */}
@@ -40,7 +57,7 @@ export function Cuti() {
             Papan Pemuka Cuti
           </h1>
           <div className='flex items-center space-x-2'>
-            <Button>Muat turun</Button>
+            <YearDropdown onChange={handleYearChange} />
           </div>
         </div>
         <Tabs
@@ -80,7 +97,13 @@ export function Cuti() {
                   </svg>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>{0}</div>
+                  <div className='text-2xl font-bold'>
+                    {loading ? (
+                      <Skeleton className='h-6 w-30' />
+                    ) : (
+                      <div>{data ?? '-'}</div>
+                    )}
+                  </div>
                   <p className='text-muted-foreground text-xs'></p>
                 </CardContent>
               </Card>
@@ -318,10 +341,7 @@ export function Cuti() {
                     Anda telah membuat 265 jualan bulan ini.
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
-                 
-                  {/* <RecentSales /> */}
-                </CardContent>
+                <CardContent>{/* <RecentSales /> */}</CardContent>
               </Card>
             </div>
           </TabsContent>
