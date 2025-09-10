@@ -255,7 +255,7 @@ export const sidebarData: SidebarData = {
           ],
         },
         {
-          title: 'Help Center',
+          title: 'Pusat Bantuan',
           url: '/help-center',
           icon: HelpCircle,
         },
